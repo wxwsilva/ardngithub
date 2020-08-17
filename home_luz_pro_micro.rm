@@ -1,0 +1,40 @@
+void setup() {
+  // Programa para Luz piscologica residencia 29072020:
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+pinMode(9,OUTPUT);
+}
+
+void loop() {
+  
+int intervalOne;
+int intervalTwo;
+int intervalThree;
+
+intervalOne = 1500; // intervalo entre um e outro estado
+intervalTwo = 1000;
+intervalThree = 1000;
+  
+digitalWrite(5,1);
+delay(intervalTwo);
+digitalWrite(5,0);
+delay(intervalOne);
+digitalWrite(6,1);
+delay(intervalThree);
+digitalWrite(6,0);
+delay(intervalOne);
+digitalWrite(7,1);
+delay(intervalTwo);
+digitalWrite(7,0);
+delay(intervalOne);
+digitalWrite(8,1);
+delay(intervalThree);
+digitalWrite(8,0);
+delay(intervalOne);
+digitalWrite(9,1);
+delay(intervalTwo);
+digitalWrite(9,0);
+delay(intervalOne);
+}
